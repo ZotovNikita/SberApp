@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/models/user.dart';
+import 'package:sber_app/app/models/chapter.dart';
 
 abstract class AppColors {
   static const Color primary = Colors.white;
@@ -10,12 +11,12 @@ abstract class AppColors {
 }
 
 abstract class AppFonts {
-
   static const titleLarge = TextStyle(
-      fontFamily: 'SF_Pro_Display',
-      fontWeight: FontWeight.w700,
-      fontSize: 24,
-      color: AppColors.textPrimary,);
+    fontFamily: 'SF_Pro_Display',
+    fontWeight: FontWeight.w700,
+    fontSize: 24,
+    color: AppColors.textPrimary,
+  );
 
   static const titleMedium = TextStyle(
       fontFamily: 'SF_Pro_Text',
@@ -51,10 +52,27 @@ abstract class AppFonts {
 abstract class Strings {
   static const String profile = "Профиль";
   static const String settings = "Настройки";
+  static const String userName = "Екатерина";
+  static const String enabledTitle = "У вас подключено";
+  static const String enabledDescription =
+      "Подписки, автоплатежи и сервисы, на которые вы подписаны";
+  static const String tariffsAndLimitsTitle = "Тарифы и лимиты";
+  static const String tariffsAndLimitsDescription =
+      "Для операций в Сбербанк Онлайн";
+  static const String interestsTitle = "Интересы";
+  static const String interestsDescription =
+      "Мы подбираем истории и предложения по темам, которые вам нравятся";
 }
 
 abstract class Resources {
   static const String userProfileImage = "assets/images/photo.png";
 }
 
-final user = User(Resources.userProfileImage, "Екатерина");
+final user = User(Resources.userProfileImage, Strings.userName);
+
+final enabled = Chapter(Strings.enabledTitle, Strings.enabledDescription);
+
+final tariffsAndLimits =
+    Chapter(Strings.tariffsAndLimitsTitle, Strings.tariffsAndLimitsDescription);
+
+final interests = Chapter(Strings.interestsTitle, Strings.interestsDescription);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/utils/constants.dart';
 import 'package:sber_app/app/widgets/appbar.dart';
+import 'package:sber_app/app/widgets/text_field.dart';
 
 class UserProfilePage extends StatefulWidget {
   const UserProfilePage({super.key});
@@ -21,8 +22,8 @@ class _UserProfilePageState extends State<UserProfilePage>
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+   
         backgroundColor: AppColors.primary,
         body: SafeArea(
             child: NestedScrollView(
@@ -30,7 +31,13 @@ class _UserProfilePageState extends State<UserProfilePage>
                   return [Appbar(tabController: _tabController, user: user)];
                 },
                 body: TabBarView(controller: _tabController, children: [
-                  ListView(physics: const NeverScrollableScrollPhysics()),
+                  ListView(
+                      physics: const NeverScrollableScrollPhysics(),
+                      children: [
+                        const SizedBox(height: 30),
+                        
+                        AppTextField(chapter: enabled)
+                      ]),
                   const Center(child: CircularProgressIndicator())
                 ]))));
   }
