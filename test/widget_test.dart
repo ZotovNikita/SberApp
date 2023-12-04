@@ -8,7 +8,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:sber_app/main.dart';
 import 'package:sber_app/app/sber_app.dart';
 
 void main() {

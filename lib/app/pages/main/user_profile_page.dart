@@ -1,54 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:sber_app/app/utils/constants.dart';
+import 'package:sber_app/app/widgets/appbar.dart';
 
 class UserProfilePage extends StatefulWidget {
-  const UserProfilePage({super.key, required this.title});
-
-  final String title;
+  const UserProfilePage({super.key});
 
   @override
   State<UserProfilePage> createState() => _UserProfilePageState();
 }
 
-class _UserProfilePageState extends State<UserProfilePage> {
-  int _counter = 0;
+class _UserProfilePageState extends State<UserProfilePage>
+    with TickerProviderStateMixin {
+  late TabController _tabController;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
+  @override
+  void initState() {
+    _tabController = TabController(length: 2, vsync: this);
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(
-
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
-        title: Text(widget.title),
-      ),
-      body: Center(
-
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
-    );
+        backgroundColor: AppColors.primary,
+        body: SafeArea(
+            child: NestedScrollView(
+                headerSliverBuilder: (context, value) {
+                  return [Appbar(tabController: _tabController, user: user)];
+                },
+                body: TabBarView(controller: _tabController, children: [
+                  ListView(physics: const NeverScrollableScrollPhysics()),
+                  const Center(child: CircularProgressIndicator())
+                ]))));
   }
 }

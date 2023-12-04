@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/pages/main/user_profile_page.dart';
+import 'package:sber_app/app/theme.dart';
 
 class SberApp extends StatelessWidget {
   const SberApp({super.key});
@@ -7,13 +8,9 @@ class SberApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const UserProfilePage(title: 'Flutter Demo Home Page'),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.themeData,
+      home: const UserProfilePage(),
     );
   }
 }
