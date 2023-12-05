@@ -14,9 +14,18 @@ class AppTheme {
 
     appBarTheme: const AppBarTheme(
         surfaceTintColor: AppColors.primary,
-        // iconTheme: IconThemeData(color: AppColors.icon)
         ),
 
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+          surfaceTintColor: AppColors.primary,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          elevation: 5
+        ),
+      ),
+    
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primary,
     ),

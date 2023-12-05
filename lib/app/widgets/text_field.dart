@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/utils/constants.dart';
-import 'package:sber_app/app/models/chapter.dart';
 
 class AppTextField extends StatelessWidget {
-  final Chapter chapter;
+  final String title;
+  final String description;
 
   const AppTextField(
-      {super.key, required this.chapter});
+      {super.key, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
@@ -14,14 +14,14 @@ class AppTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          chapter.title,
+          title,
           style: AppFonts.titleMedium,
         ),
         const Padding(
           padding: EdgeInsets.only(top: 8),
         ),
         Text(
-          chapter.description, 
+          description, 
           style: AppFonts.bodySmall),
       ],
     );
