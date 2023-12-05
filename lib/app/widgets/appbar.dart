@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sber_app/app/utils/constants.dart';
+import 'package:sber_app/app/theme/colors.dart';
+import 'package:sber_app/app/theme/strings.dart';
 import 'package:sber_app/app/models/user.dart';
 
 class Appbar extends StatelessWidget {

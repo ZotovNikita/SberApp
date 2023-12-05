@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sber_app/app/models/chapter.dart';
 import 'package:sber_app/app/models/service.dart';
 import 'package:sber_app/app/widgets/text_field.dart';
-import 'package:sber_app/app/widgets/services/service_card.dart';
+import 'package:sber_app/app/widgets/services_widgets/service_card.dart';
 
 class Services extends StatelessWidget {
   const Services({super.key, required this.chapter, required this.services});

@@ -1,5 +1,9 @@
 class Service {
-  Service(this.image, this.serviceTitle, this.payment, this.cost);
+  Service(
+      {required this.image,
+      required this.serviceTitle,
+      required this.payment,
+      required this.cost});
   final String image;
   final String serviceTitle;
   final String payment;

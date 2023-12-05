@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/models/service.dart';
-import 'package:sber_app/app/utils/constants.dart';
 
 class ServiceCard extends StatelessWidget {
   const ServiceCard({super.key, required this.service});
@@ -24,7 +23,7 @@ class ServiceCard extends StatelessWidget {
                   const SizedBox(width: 13),
                   Text(
                     service.serviceTitle,
-                    style: AppFonts.titleMedium,
+                    style: Theme.of(context).textTheme.titleMedium
                   )
                 ],
               ),

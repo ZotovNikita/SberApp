@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:sber_app/app/utils/constants.dart';
 
 class AppTextField extends StatelessWidget {
   final String title;
@@ -15,14 +14,14 @@ class AppTextField extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppFonts.titleMedium,
+          style: Theme.of(context).textTheme.titleMedium,
         ),
         const Padding(
           padding: EdgeInsets.only(top: 8),
         ),
         Text(
           description, 
-          style: AppFonts.bodySmall),
+          style: Theme.of(context).textTheme.bodySmall),
       ],
     );
   }

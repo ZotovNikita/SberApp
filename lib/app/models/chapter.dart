@@ -1,5 +1,5 @@
 class Chapter {
-  Chapter(this.title, this.description);
+  Chapter({required this.title, required this.description});
   final String title;
   final String description;
 }

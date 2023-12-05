@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:sber_app/app/utils/constants.dart';
+import 'package:sber_app/app/theme/fonts.dart';
+import 'package:sber_app/app/theme/colors.dart';
 
 class AppTheme {
   static ThemeData themeData = ThemeData(
