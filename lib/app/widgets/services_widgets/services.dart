@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/models/chapter.dart';
 import 'package:sber_app/app/models/service.dart';
-import 'package:sber_app/app/widgets/text_field.dart';
+import 'package:sber_app/app/widgets/category_name.dart';
 import 'package:sber_app/app/widgets/services_widgets/service_card.dart';
 
 class Services extends StatelessWidget {
@@ -17,7 +17,7 @@ class Services extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: AppTextField(
+          child: CategoryName(
             title: chapter.title, 
             description: chapter.description
           )

@@ -13,7 +13,7 @@ class Appbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       backgroundColor: AppColors.primary,
-      elevation: 2,
+      elevation: 4,
       pinned: true,
       floating: false,
       expandedHeight: 280,
@@ -56,7 +56,6 @@ class Appbar extends StatelessWidget {
                   height: 36,
                 ),
                 Container(
-                  // alignment: Alignment.topCenter,
                   width: 110,
                   height: 110,
                   decoration: ShapeDecoration(

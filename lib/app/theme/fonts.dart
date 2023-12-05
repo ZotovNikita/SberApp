@@ -21,29 +21,32 @@ abstract class AppFonts {
   static const titleSmall = TextStyle(
     fontFamily: 'SF_Pro_Text',
     fontWeight: FontWeight.w500,
-    fontSize: 14,
+    fontSize: 16,
     color: AppColors.textPrimary,
-    letterSpacing: -0.7,
+    letterSpacing: -0.4,
   );
 
   static final bodyLarge = TextStyle(
-      fontFamily: 'SF_Pro_Text',
-      fontWeight: FontWeight.w500,
-      fontSize: 20,
-      color: AppColors.textSecondary,
-      letterSpacing: -0.42);
+    fontFamily: 'SF_Pro_Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    color: AppColors.textSecondary,
+    letterSpacing: -0.42
+  );
 
   static final bodyMedium = TextStyle(
-      fontFamily: 'SF_Pro_Text',
-      fontWeight: FontWeight.w500,
-      fontSize: 16,
-      color: AppColors.textSecondary,
-      letterSpacing: -0.42);
+    fontFamily: 'SF_Pro_Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 16,
+    color: AppColors.textSecondary,
+    letterSpacing: -0.42
+  );
 
   static final bodySmall = TextStyle(
-      fontFamily: 'SF_Pro_Text',
-      fontWeight: FontWeight.w500,
-      fontSize: 14,
-      color: AppColors.textSecondary,
-      letterSpacing: -0.42);
+    fontFamily: 'SF_Pro_Text',
+    fontWeight: FontWeight.w500,
+    fontSize: 14,
+    color: AppColors.textSecondary,
+    letterSpacing: -0.42
+  );
 }

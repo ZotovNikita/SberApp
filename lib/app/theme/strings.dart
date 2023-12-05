@@ -13,9 +13,12 @@ abstract class Strings {
       "Мы подбираем истории и предложения по темам, которые вам нравятся";
   static const String sberPrimeTitle = "СберПрайм";
   static const String sberPrimePayment = "Платеж 9 июля";
-  static const String sberPrimeCost = "199 рублей в месяц";
+  static const String serviceCost = "199 рублей в месяц";
   static const String transfersTitle = "Переводы";
   static const String transfersPayment = "Автопродление 21 августа";
-  static const String transfersCost = "199 рублей в месяц";
-  
+  static const String editLimitTitle = "Изменить суточный лимит";
+  static const String editLimitDescription = "На платежи и переводы";
+  static const String transfersComissionTitle = "Переводы без комиссии";
+  static const String transfersComissionDescription = "Показать остаток в этом месяце";
+  static const String infoTitle = "Информация о тарифах и лимитах";
 }

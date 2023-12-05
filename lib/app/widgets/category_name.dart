@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AppTextField extends StatelessWidget {
+class CategoryName extends StatelessWidget {
   final String title;
   final String description;
 
-  const AppTextField(
-      {super.key, required this.title, required this.description});
+  const CategoryName(
+    {super.key, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
