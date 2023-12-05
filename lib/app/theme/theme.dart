@@ -14,6 +14,7 @@ class AppTheme {
       bodySmall: AppFonts.bodySmall
     ),
     appBarTheme: const AppBarTheme(
+      elevation: 4,
       surfaceTintColor: AppColors.primary,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
