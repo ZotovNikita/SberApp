@@ -1,16 +1,26 @@
-# sber_app
+## Верстка мобильного приложения "СберБанк"
 
-A new Flutter project.
+Этот проект представляет собой верстку главного экрана мобильного приложения для СберБанка, разработанного с использованием Flutter.
 
-## Getting Started
+### Описание
 
-This project is a starting point for a Flutter application.
+Приложение было разработано с целью предоставления удобного и универсального инструмента для клиентов СберБанка. Оно позволяет пользователю просматривать доступные подписки и сервисы, управлять тарифами и лимитами, а также выбирать собственные предпочтения.
 
-A few resources to get you started if this is your first Flutter project:
+### Технологии
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter - это открытый UI-инструментарий от Google, который позволяет создавать красивые, нативные компиляции на многие платформы из единой кодовой базы. Это позволяет ускорить процесс разработки, упростить поддержку и обновление приложений.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Результат
+
+![Начало страницы](/presentation/top_screen.jpg)
+
+
+![Конец страницы](/presentation/bot_screen.jpg)
+
+### Примечание
+
+Проект был собран и отлажен на Android
+
+Версия Flutter: 3.16.2
+
+Версия Dart: 3.2.2
