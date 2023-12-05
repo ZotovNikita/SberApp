@@ -25,6 +25,17 @@ class AppTheme {
         elevation: 5
       ),
     ),
+    chipTheme: ChipThemeData(
+      labelPadding: const EdgeInsets.symmetric(horizontal: 4),
+      labelStyle: AppFonts.titleVerySmall,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+          side: const BorderSide(color: Colors.transparent)
+      ),
+      backgroundColor: AppColors.chips,
+      selectedColor: AppColors.tabBrand,
+      showCheckmark: false
+      ),
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primary,
     ),

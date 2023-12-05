@@ -21,4 +21,11 @@ abstract class Strings {
   static const String transfersComissionTitle = "Переводы без комиссии";
   static const String transfersComissionDescription = "Показать остаток в этом месяце";
   static const String infoTitle = "Информация о тарифах и лимитах";
+  static const String food = "Еда";
+  static const String selfDevelopment = "Саморазвитие";
+  static const String technologies = "Технологии";
+  static const String home = "Дом";
+  static const String leisure = "Досуг";
+  static const String care = "Забота о себе";
+  static const String science = "Наука";
 }
