@@ -11,21 +11,17 @@ class AppTheme {
         bodyLarge: AppFonts.bodyLarge,
         bodyMedium: AppFonts.bodyMedium,
         bodySmall: AppFonts.bodySmall),
-
     appBarTheme: const AppBarTheme(
-        surfaceTintColor: AppColors.primary,
-        ),
-
+      surfaceTintColor: AppColors.primary,
+    ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
           surfaceTintColor: AppColors.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          elevation: 5
-        ),
-      ),
-    
+          elevation: 5),
+    ),
     colorScheme: ColorScheme.fromSeed(
       seedColor: AppColors.primary,
     ),

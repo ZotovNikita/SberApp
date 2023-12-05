@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sber_app/app/utils/constants.dart';
 import 'package:sber_app/app/widgets/appbar.dart';
-import 'package:sber_app/app/widgets/services.dart';
+import 'package:sber_app/app/widgets/services/services.dart';
 
 class UserProfilePage extends StatefulWidget {
   const UserProfilePage({super.key});
